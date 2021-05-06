@@ -114,7 +114,7 @@ opti.minimize(sumsqr(F));
 % Solve
 optionssol.ipopt.hessian_approximation = 'limited-memory';
 optionssol.ipopt.nlp_scaling_method = 'gradient-based'; 
-optionssol.ipopt.linear_solver = 'ma57';
+optionssol.ipopt.linear_solver = 'mumps';
 optionssol.ipopt.tol = 1e-8;
 optionssol.ipopt.nlp_scaling_max_gradient = 100;
 opti.solver('ipopt',optionssol)
